@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: fantasy, sans-serif;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1.5px solid black; /* Corregido el uso de comas en el valor de border */
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: chocolate;
+}
+
+button:hover {
+    background-color: rgb(141, 75, 28);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px;
+    font-weight: bold;
+    color: chocolate;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+
+header a:hover {
+    color: chocolate;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: url(1087621.jpg); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ubicación de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* Cambié el color del texto a blanco para que sea visible en el fondo */
+}
+
+#Somos-Muscleshark {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#programas-de-entrenamiento {
+    background-color: darkslategray;
+    text-align: center;
+    color: white;
+}
+
+#programas-de-entrenamiento .container {
+    padding: 100px 0px;
+}
+
+#programas-de-entrenamiento h2 {
+    margin-top: 0;
+}
+
+#programas-de-entrenamiento .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5), /* Corregido el valor de opacidad (0,5 a 0.5) */
+        rgba(0, 0, 0, 0.5)
+    ), url(1087621.jpg);
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5), /* Corregido el valor de opacidad (0,5 a 0.5) */
+        rgba(0, 0, 0, 0.5)
+    ), url(imagen.1.jpg);
+}
+
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5), /* Corregido el valor de opacidad (0,5 a 0.5) */
+        rgba(0, 0, 0, 0.5)
+    ), url(imagen.jpg2.jpg);
+}
+
+.carta:last-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5), /* Corregido el valor de opacidad (0,5 a 0.5) */
+        rgba(0, 0, 0, 0.5)
+    ), url(imagen.jpg2.jpg);
+}
+
+#Caracteristicas .container{
+    text-align: center;
+    padding: 180px 12px;
+    background-color: white;
+}
+
+
+#Empieza-ya {
+    text-align: center;
+    padding: 100px 0;
+    background-color: darkslategray;
+    color: white;
+    background-image: url(1087621.jpg); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ubicación de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; 
+}
+
+#Empieza-ya button {
+    background-color: chocolate;
+    color: white;
+}
+
+#Empieza-ya button:hover {
+    background-color: rgb(141, 75, 28);
+}
+
+footer {
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (min-width: 720px) {
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    
+    header .container{
+        flex-direction: row;      
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 10px;
+    }
+}
