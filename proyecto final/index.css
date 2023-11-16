@@ -1,0 +1,224 @@
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagen-de-fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1.title {
+    margin: auto; 
+    text-align: center;
+}
+
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #2162ad;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.logo {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #777;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 150px;
+}
+
+.equipo {
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.equipo img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.equipo button {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1.5px solid white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: #40a526;
+}
+
+.equipo button:hover {
+    background-color: #4a8f1d;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos generales */
+
+header, nav, section, footer {
+    box-sizing: border-box;
+}
+
+/* Estilos específicos para pantallas grandes */
+
+@media (min-width: 769px) {
+    header {
+        padding: 15px 0;
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+
+    section {
+        padding: 150px;
+    }
+}
+
+/* Estilos específicos para pantallas pequeñas */
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    nav {
+        padding: 5px 0;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+
+/* Resto de estilos... */
+
+
+.equipo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #777;
+}
+
+section.equipos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.equipo {
+    width: calc(33.33% - 20px); /* Ajusta el ancho para que haya espacio entre los equipos */
+    margin: 10px;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.equipo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Borde redondeado */
+}
+
+.equipo button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Resto del código CSS se mantiene igual */
+
+.equipo h3 {
+    margin-top: 10px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.equipo button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

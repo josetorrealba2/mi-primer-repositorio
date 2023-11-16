@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrofutbol</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .equipo img {
+            max-width: 100%; /* Hace que la anchura de la imagen sea del 100% del contenedor */
+            height: 200px; /* Mantiene la proporción original de la imagen */
+        }
+    </style>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abgalumo:wght@400;700&display=swap">
+</head>
+
+<body>
+    <header>
+        <img src="soccer-ball-png-transparent-7.png" alt="Logo" class="logo">
+        <h1> <div class="title"></div>Centrofutbol</h1>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#" id="noticias">Noticias</a>
+        <a href="#">Contacto</a>
+        <a href="login.html">Iniciar Sesión</a>
+    </nav>
+
+    <section>
+        <div class="equipo">
+            <img src="barcelona_logo.png" alt="FC Barcelona">
+            <h3>FC Barcelona</h3>
+            <button onclick="mostrarInformacion('barcelona')">Más información</button>
+        </div>
+
+        <div class="equipo">
+            <img src="real_madrid_logo.png" alt="Real Madrid">
+            <h3>Real Madrid</h3>
+            <button onclick="mostrarInformacion('real_madrid')">Más información</button>
+        </div>
+
+        <div class="equipo">
+            <img src="logo-manchester-city-1536.png" alt="Man City">
+            <h3>Manchester City</h3>
+            <button onclick="mostrarInformacion('man_city')">Más información</button>
+        </div>
+
+        <div class="equipo">
+            <img src="manchester_united_PNG9.png" alt="Man United">
+            <h3>Manchester United</h3>
+            <button onclick="mostrarInformacion('man_united')">Más información</button>
+        </div>
+
+        <div class="equipo">
+            <img src="milan-logo-1.png" alt="AC Milan">
+            <h3>AC Milan</h3>
+            <button onclick="mostrarInformacion('ac_milan')">Más información</button>
+        </div>
+
+        <div class="equipo">
+            <img src="inter-milan-logo.png" alt="Inter de Milan">
+            <h3>Inter de Milan</h3>
+            <button onclick="mostrarInformacion('inter_de_milan')">Más información</button>
+        </div>
+
+        <div class="equipo">
+            <img src="logo-bayern-munique-4096.png" alt="Bayern">
+            <h3>Bayern</h3>
+            <button onclick="mostrarInformacion('bayern')">Más información</button>
+        </div>
+
+        <div class="equipo">
+            <img src="bvb-borussia-dortmund-logo-1.png" alt="Borussia Dortmund">
+            <h3>Borussia Dortmund</h3>
+            <button onclick="mostrarInformacion('borussia_dortmund')">Más información</button>
+        </div>
+    </section>
+
+<footer>
+    <div class="container">
+      <p>&copy; Centrofutboll2023</p>
+    </div>
+  </footer>
+
+ <script src="index.js"></script>
+
+</body>
+
+</html>
+

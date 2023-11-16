@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <header>
+        <h1>Centrofutbol</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#">Noticias</a>
+        <a href="#">Contacto</a>
+        <a href="login.html">Iniciar Sesión</a>
+    </nav>
+
+    <section class="login">
+        <h2>Iniciar Sesión</h2>
+        <form action="procesar_login.php" method="post">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Centrofutboll2023</p>
+        </div>
+    </footer>
+</body>
+
+</html>
